@@ -1,0 +1,121 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 700px;
+  background: #2f2f2f;
+}
+h6{
+  text-align: center;
+  padding: 10px;
+  color: #efefef;
+  background: #000;
+}
+#space{
+  font-family: 'Roboto';
+}
+#todolist{
+  width: 350px;
+  min-height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 0px 1px 12px #000;
+}
+#todolist > div{
+  width: 100%;
+}
+#addtodo_area{
+  height:150px;
+  background: linear-gradient(#4A148C,#7B1FA2,#9C27B0,#7B1FA2);
+/*   border-bottom: 5px solid #000; */
+}
+#addtodo_area button{
+  background: #e91e63;
+  position: absolute;
+  top: 170px;
+  margin-left: -45px;
+}
+#displaytodo_list{
+  min-height:350px;
+  background: #fff;
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.fa-heart-o{
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 15px;
+}
+#today{
+  color: #2f2f2f;
+  font-weight: bold;
+}
+#addtodo_area > input{
+  width: 80%;
+  height: 30px;
+  clear: both;
+  background: #fff;
+  margin-left: 10%;
+  margin-top: 30px;
+  border-radius:2px;
+}
+#displaytodo_list ul{
+  width: 100%;
+  min-height: 300px;
+}
+#displaytodo_list li {
+    color: #555;
+    padding: 7px;
+    border-bottom: 1px solid #efefef;
+    text-transform: capitalize;
+    height: 36px;
+    margin-top: 4px;
+}
+#addedTodo{
+  padding: 4px;
+}
+.rights{
+  color: #efefef;
+  font-size: 12px;
+  text-align: center;
+  padding: 3px;
+  margin-top: -6px;
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: relative;
+    left: 0;
+    opacity: 0;
+    opacity: 9.9;
+    height: 25px;
+    width: 25px;
+    margin-top: -4px;
+    float: left;
+    margin-right: 3px;
+}
+.cleanning {
+    margin-top: -30px;
+    margin-left: 2%;
+    margin-bottom: -20px;
+    background: #7b7b7b;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 4px solid #e91e63;
+    box-shadow: 0 1px 0 0 #5a5a5a;
+}
+@media(max-width: 400px){
+
+  h6{
+    margin: 0;
+  }
+  #space{
+    margin: 0 !important;
+  }
+  #todolist{
+    width: 100%;
+    margin-top: 0;
+  }
+  #addtodo_area button{
+    top: 120px;
+  }
+}
